@@ -1,12 +1,14 @@
 package com.luowei.subject.domain.entity;
 
+import com.luowei.subject.common.entity.PageInfo;
+import com.luowei.subject.common.entity.PageResult;
 import lombok.Data;
 
 import java.io.Serializable;
 import java.util.List;
 
 @Data
-public class SubjectInfoBO implements Serializable {
+public class SubjectInfoBO extends PageInfo implements Serializable {
     /**
      * 主键
      */

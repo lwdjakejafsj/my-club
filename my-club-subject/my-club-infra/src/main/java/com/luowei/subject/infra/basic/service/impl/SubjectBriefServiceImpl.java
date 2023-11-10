@@ -69,6 +69,6 @@ public class SubjectBriefServiceImpl implements SubjectBriefService {
 
     @Override
     public SubjectBrief queryByCondition(SubjectBrief subjectBrief) {
-        return null;
+        return this.subjectBriefDao.queryBySubjectId(subjectBrief);
     }
 }

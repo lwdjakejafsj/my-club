@@ -6,6 +6,7 @@ import com.google.common.base.Preconditions;
 import com.luowei.subject.application.convert.SubjectAnswerDTOConverter;
 import com.luowei.subject.application.convert.SubjectInfoDTOConverter;
 import com.luowei.subject.application.dto.SubjectInfoDTO;
+import com.luowei.subject.common.entity.PageResult;
 import com.luowei.subject.common.entity.Result;
 import com.luowei.subject.domain.entity.SubjectAnswerBO;
 import com.luowei.subject.domain.entity.SubjectInfoBO;
@@ -30,7 +31,11 @@ public class SubjectController {
     @Resource
     private SubjectInfoDomainService subjectInfoDomainService;
 
-
+    /**
+     * @Author: luowei
+     * @Description: 添加题目
+     * @DateTime:
+     */
     @PostMapping("/add")
     public Result<Boolean> add(@RequestBody SubjectInfoDTO subjectInfoDTO) {
         try {
@@ -57,4 +62,44 @@ public class SubjectController {
             return Result.fail("新增题目失败");
         }
     }
+
+    @PostMapping("/querySubjectInfo")
+    public Result<SubjectInfoDTO> querySubjectInfo(@RequestBody SubjectInfoDTO subjectInfoDTO) {
+        try {
+            if (log.isInfoEnabled()) {
+                log.info("SubjectController.querySubjectInfo.dto:{}", JSON.toJSONString(subjectInfoDTO));
+            }
+            Preconditions.checkNotNull(subjectInfoDTO.getId(), "题目id不能为空");
+            SubjectInfoBO subjectInfoBO = SubjectInfoDTOConverter.INSTANCE.convertDTOToBO(subjectInfoDTO);
+            SubjectInfoBO boResult = subjectInfoDomainService.querySubjectInfo(subjectInfoBO);
+            SubjectInfoDTO dtoResult = SubjectInfoDTOConverter.INSTANCE.convertBOToDTO(boResult);
+            return Result.ok(dtoResult);
+        } catch (Exception e) {
+            log.error("SubjectCategoryController.querySubjectInfo.error:{}", e.getMessage(), e);
+            return Result.fail("题目信息查询失败");
+        }
+    }
+
+    /**
+     * @Author: luowei
+     * @Description: 查询题目列表
+     * @DateTime:
+     */
+    @PostMapping("/getSubjectPage")
+    public Result<PageResult<SubjectInfoDTO>> getSubjectPage(@RequestBody SubjectInfoDTO subjectInfoDTO) {
+        try {
+            if (log.isInfoEnabled()) {
+                log.info("SubjectController.getSubjectPage.dto:{}", JSON.toJSONString(subjectInfoDTO));
+            }
+            Preconditions.checkNotNull(subjectInfoDTO.getCategoryId(), "分类id不能为空");
+            Preconditions.checkNotNull(subjectInfoDTO.getLabelId(), "标签id不能为空");
+            SubjectInfoBO subjectInfoBO = SubjectInfoDTOConverter.INSTANCE.convertDTOToBO(subjectInfoDTO);
+            PageResult<SubjectInfoBO> boPageResult = subjectInfoDomainService.getSubjectPage(subjectInfoBO);
+            return Result.ok(boPageResult);
+        } catch (Exception e) {
+            log.error("SubjectCategoryController.getSubjectPage.error:{}", e.getMessage(), e);
+            return Result.fail("题目列表查询失败");
+        }
+    }
+
 }

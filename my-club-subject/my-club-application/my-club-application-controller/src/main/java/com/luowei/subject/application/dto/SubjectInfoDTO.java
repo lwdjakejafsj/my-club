@@ -1,5 +1,6 @@
 package com.luowei.subject.application.dto;
 
+import com.luowei.subject.common.entity.PageInfo;
 import com.luowei.subject.domain.entity.SubjectAnswerBO;
 import lombok.Data;
 
@@ -7,7 +8,7 @@ import java.io.Serializable;
 import java.util.List;
 
 @Data
-public class SubjectInfoDTO implements Serializable {
+public class SubjectInfoDTO extends PageInfo implements Serializable {
     /**
      * 主键
      */
@@ -56,6 +57,8 @@ public class SubjectInfoDTO implements Serializable {
      * 答案选项
      */
     private List<SubjectAnswerDTO> optionList;
+
+    //用来进行题目列表查询的时候使用
     private Long categoryId;
     private Long labelId;
 }

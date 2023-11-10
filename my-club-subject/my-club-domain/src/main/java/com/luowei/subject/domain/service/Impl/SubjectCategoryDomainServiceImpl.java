@@ -1,5 +1,6 @@
 package com.luowei.subject.domain.service.Impl;
 
+import com.alibaba.fastjson.JSON;
 import com.luowei.subject.common.enums.IsDeleteEnum;
 import com.luowei.subject.domain.convert.SubjectCategoryConverter;
 import com.luowei.subject.domain.entity.SubjectCategoryBO;
@@ -46,6 +47,9 @@ public class SubjectCategoryDomainServiceImpl implements SubjectCategoryDomainSe
 
     @Override
     public Boolean update(SubjectCategoryBO subjectCategoryBO) {
+        if (log.isInfoEnabled()) {
+            log.info("SubjectCategoryDomainServiceImpl.update.bo:{}", JSON.toJSONString(subjectCategoryBO));
+        }
         SubjectCategory subjectCategory = SubjectCategoryConverter.INSTANCE
                 .convertBOToEntity(subjectCategoryBO);
         int count = subjectCategoryService.update(subjectCategory);
@@ -54,6 +58,9 @@ public class SubjectCategoryDomainServiceImpl implements SubjectCategoryDomainSe
 
     @Override
     public Boolean delete(SubjectCategoryBO subjectCategoryBO) {
+        if (log.isInfoEnabled()) {
+            log.info("SubjectCategoryDomainServiceImpl.delete.bo:{}", JSON.toJSONString(subjectCategoryBO));
+        }
         SubjectCategory subjectCategory = SubjectCategoryConverter.INSTANCE
                 .convertBOToEntity(subjectCategoryBO);
         subjectCategory.setIsDeleted(IsDeleteEnum.DELETE.code);

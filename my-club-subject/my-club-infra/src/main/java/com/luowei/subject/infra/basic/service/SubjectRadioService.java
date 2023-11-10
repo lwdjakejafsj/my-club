@@ -46,4 +46,6 @@ public interface SubjectRadioService {
 
 
     void insertBatch(List<SubjectRadio> subjectRadioList);
+
+    List<SubjectRadio> queryByCondition(SubjectRadio subjectRadio);
 }

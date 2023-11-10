@@ -90,9 +90,13 @@
         select
             id, label_name, sort_num, created_by, created_time, update_by, update_time, is_deleted
         from subject_label
-        <foreach open="(" close=")" collection="labelIdList" item="id" separator=",">
-            #{id}
-        </foreach>
+        <where>
+            id in
+            <foreach open="(" close=")" collection="labelIdList" item="id" separator=",">
+                #{id}
+            </foreach>
+        </where>
+
     </select>
 
     <!--新增所有列-->

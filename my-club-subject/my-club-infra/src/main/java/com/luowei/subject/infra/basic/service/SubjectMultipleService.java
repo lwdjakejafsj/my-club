@@ -45,4 +45,6 @@ public interface SubjectMultipleService {
     boolean deleteById(Long id);
 
     void insertBatch(List<SubjectMultiple> subjectMultipleList);
+
+    List<SubjectMultiple> queryByCondition(SubjectMultiple subjectMultiple);
 }

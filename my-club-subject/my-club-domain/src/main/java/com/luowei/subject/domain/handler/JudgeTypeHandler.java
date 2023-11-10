@@ -38,9 +38,9 @@ public class JudgeTypeHandler implements SubjectTypeHandler{
         subjectJudgeService.insert(subjectJudge);
     }
     @Override
-    public SubjectOptionBO query(int subjectId) {
+    public SubjectOptionBO query(Long subjectId) {
         SubjectJudge subjectJudge = new SubjectJudge();
-        subjectJudge.setSubjectId(Long.valueOf(subjectId));
+        subjectJudge.setSubjectId(subjectId);
         List<SubjectJudge> result = subjectJudgeService.queryByCondition(subjectJudge);
         List<SubjectAnswerBO> subjectAnswerBOList = SubjectJudgeConverter.INSTANCE.convertEntityToBoList(result);
         SubjectOptionBO subjectOptionBO = new SubjectOptionBO();

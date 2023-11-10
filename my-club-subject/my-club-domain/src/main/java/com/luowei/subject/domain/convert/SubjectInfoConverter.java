@@ -2,6 +2,7 @@ package com.luowei.subject.domain.convert;
 
 import com.luowei.subject.domain.entity.SubjectInfoBO;
 import com.luowei.subject.domain.entity.SubjectLabelBO;
+import com.luowei.subject.domain.entity.SubjectOptionBO;
 import com.luowei.subject.infra.basic.entity.SubjectInfo;
 import com.luowei.subject.infra.basic.entity.SubjectLabel;
 import org.mapstruct.Mapper;
@@ -16,4 +17,6 @@ public interface SubjectInfoConverter {
     SubjectInfo convertBOToEntity(SubjectInfoBO subjectInfoBO);
 
     List<SubjectInfoBO> covertEntityListToBoList(List<SubjectInfo> subjectInfoList);
+
+    SubjectInfoBO convertOptionAndEntityToBo(SubjectOptionBO optionBO, SubjectInfo subjectInfo);
 }

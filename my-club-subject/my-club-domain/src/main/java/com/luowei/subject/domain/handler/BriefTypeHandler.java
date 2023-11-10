@@ -28,7 +28,7 @@ public class BriefTypeHandler implements SubjectTypeHandler{
 
     @Override
     public SubjectInfoTypeEnum getHandlerType() {
-        return SubjectInfoTypeEnum.JUDGE;
+        return SubjectInfoTypeEnum.BRIEF;
     }
     @Override
     public void add(SubjectInfoBO subjectInfoBO) {
@@ -40,9 +40,9 @@ public class BriefTypeHandler implements SubjectTypeHandler{
         subjectBriefService.insert(subjectBrief);
     }
     @Override
-    public SubjectOptionBO query(int subjectId) {
+    public SubjectOptionBO query(Long subjectId) {
         SubjectBrief subjectBrief = new SubjectBrief();
-        subjectBrief.setSubjectId(Long.valueOf(subjectId));
+        subjectBrief.setSubjectId(subjectId);
         SubjectBrief result = subjectBriefService.queryByCondition(subjectBrief);
         SubjectOptionBO subjectOptionBO = SubjectBriefConverter.INSTANCE.convertEntityToOptionBO(result);
         subjectOptionBO.setSubjectAnswer(result.getSubjectAnswer());

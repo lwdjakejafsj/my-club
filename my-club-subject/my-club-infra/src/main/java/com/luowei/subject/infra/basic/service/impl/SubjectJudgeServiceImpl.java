@@ -68,7 +68,6 @@ public class SubjectJudgeServiceImpl implements SubjectJudgeService {
 
     @Override
     public List<SubjectJudge> queryByCondition(SubjectJudge subjectJudge) {
-
-        return null;
+        return this.subjectJudgeDao.queryByCondition(subjectJudge);
     }
 }

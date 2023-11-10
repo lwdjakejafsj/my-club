@@ -16,5 +16,5 @@ public interface SubjectTypeHandler {
     /**
      * 实际的题目的插入
      */
-    SubjectOptionBO query(int subjectId);
+    SubjectOptionBO query(Long subjectId);
 }
