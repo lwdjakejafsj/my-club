@@ -4,7 +4,7 @@ import lombok.Getter;
 
 @Getter
 public enum CategoryTypeEnum {
-    PRIMARY(1,"岗位大类"),
+    PRIMARY(1,"一级大类"),
     SECOND(2,"二级分类");
     public int code;
     public String desc;

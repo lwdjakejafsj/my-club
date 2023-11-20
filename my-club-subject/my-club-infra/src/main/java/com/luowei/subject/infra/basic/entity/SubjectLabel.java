@@ -23,6 +23,11 @@ public class SubjectLabel implements Serializable {
      */
     private String labelName;
     /**
+     * 分类id
+     * 虽然在mapping中已经做了映射，但是在新增题目的时候，题目还没有创建，还需要根据分类查询标签
+     */
+    private Long categoryId;
+    /**
      * 排序
      */
     private Integer sortNum;
