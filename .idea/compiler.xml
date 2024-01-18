@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="my-club-auth-application-controller" />
+        <module name="my-club-common-starter" />
+        <module name="my-club-starter" />
+        <module name="my-club-auth-domain" />
+        <module name="my-club-application-mq" />
+        <module name="my-club-gateway" />
+        <module name="my-club-auth-api" />
+        <module name="my-club-oss" />
+        <module name="my-club-subject-api" />
+        <module name="my-club-application-controller" />
+        <module name="my-club-auth-starter" />
+        <module name="my-club-infra" />
+        <module name="my-club-domain" />
+        <module name="my-club-auth-application-job" />
+        <module name="my-club-wx" />
+        <module name="my-club-common" />
+        <module name="my-club-application-job" />
+        <module name="my-club-auth-common" />
+        <module name="my-club-auth-infra" />
+        <module name="my-club-auth-application-mq" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="my-club-application" target="1.8" />
+      <module name="my-club-application-controller" target="1.8" />
+      <module name="my-club-application-job" target="1.8" />
+      <module name="my-club-application-mq" target="1.8" />
+      <module name="my-club-auth" target="1.8" />
+      <module name="my-club-auth-api" target="1.8" />
+      <module name="my-club-auth-application" target="1.8" />
+      <module name="my-club-auth-application-controller" target="1.8" />
+      <module name="my-club-auth-application-job" target="1.8" />
+      <module name="my-club-auth-application-mq" target="1.8" />
+      <module name="my-club-auth-common" target="1.8" />
+      <module name="my-club-auth-domain" target="1.8" />
+      <module name="my-club-auth-infra" target="1.8" />
+      <module name="my-club-auth-starter" target="1.8" />
+      <module name="my-club-common" target="1.8" />
+      <module name="my-club-common-starter" target="1.8" />
+      <module name="my-club-domain" target="1.8" />
+      <module name="my-club-gateway" target="1.8" />
+      <module name="my-club-infra" target="1.8" />
+      <module name="my-club-oss" target="1.8" />
+      <module name="my-club-starter" target="1.8" />
+      <module name="my-club-subject" target="1.8" />
+      <module name="my-club-subject-api" target="1.8" />
+      <module name="my-club-wx" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

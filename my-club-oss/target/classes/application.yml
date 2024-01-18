@@ -1,0 +1,11 @@
+server:
+  port: 4010
+
+minio:
+  url: http://101.43.140.223:9000
+  accessKey: minioadmin
+  secretKey: luowei...
+
+#storage:
+#  service:
+#    type: aliyun

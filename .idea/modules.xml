@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/my-club.iml" filepath="$PROJECT_DIR$/.idea/my-club.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-club-subject/my-club-application/my-club-application.iml" filepath="$PROJECT_DIR$/my-club-subject/my-club-application/my-club-application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-club-subject/my-club-application/my-club-application-controller/my-club-application-controller.iml" filepath="$PROJECT_DIR$/my-club-subject/my-club-application/my-club-application-controller/my-club-application-controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-club-subject/my-club-application/my-club-application-job/my-club-application-job.iml" filepath="$PROJECT_DIR$/my-club-subject/my-club-application/my-club-application-job/my-club-application-job.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-club-subject/my-club-application/my-club-application-mq/my-club-application-mq.iml" filepath="$PROJECT_DIR$/my-club-subject/my-club-application/my-club-application-mq/my-club-application-mq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-club-auth/my-club-auth.iml" filepath="$PROJECT_DIR$/my-club-auth/my-club-auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-club-auth/my-club-auth-api/my-club-auth-api.iml" filepath="$PROJECT_DIR$/my-club-auth/my-club-auth-api/my-club-auth-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-club-auth/my-club-auth-application/my-club-auth-application.iml" filepath="$PROJECT_DIR$/my-club-auth/my-club-auth-application/my-club-auth-application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-club-auth/my-club-auth-application/my-club-auth-application-controller/my-club-auth-application-controller.iml" filepath="$PROJECT_DIR$/my-club-auth/my-club-auth-application/my-club-auth-application-controller/my-club-auth-application-controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-club-auth/my-club-auth-application/my-club-auth-application-job/my-club-auth-application-job.iml" filepath="$PROJECT_DIR$/my-club-auth/my-club-auth-application/my-club-auth-application-job/my-club-auth-application-job.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-club-auth/my-club-auth-application/my-club-auth-application-mq/my-club-auth-application-mq.iml" filepath="$PROJECT_DIR$/my-club-auth/my-club-auth-application/my-club-auth-application-mq/my-club-auth-application-mq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-club-auth/my-club-auth-common/my-club-auth-common.iml" filepath="$PROJECT_DIR$/my-club-auth/my-club-auth-common/my-club-auth-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-club-auth/my-club-auth-domain/my-club-auth-domain.iml" filepath="$PROJECT_DIR$/my-club-auth/my-club-auth-domain/my-club-auth-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-club-auth/my-club-auth-infra/my-club-auth-infra.iml" filepath="$PROJECT_DIR$/my-club-auth/my-club-auth-infra/my-club-auth-infra.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-club-auth/my-club-auth-starter/my-club-auth-starter.iml" filepath="$PROJECT_DIR$/my-club-auth/my-club-auth-starter/my-club-auth-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-club-subject/my-club-common/my-club-common.iml" filepath="$PROJECT_DIR$/my-club-subject/my-club-common/my-club-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-club-common-starter/my-club-common-starter.iml" filepath="$PROJECT_DIR$/my-club-common-starter/my-club-common-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-club-subject/my-club-domain/my-club-domain.iml" filepath="$PROJECT_DIR$/my-club-subject/my-club-domain/my-club-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-club-gateway/my-club-gateway.iml" filepath="$PROJECT_DIR$/my-club-gateway/my-club-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-club-subject/my-club-infra/my-club-infra.iml" filepath="$PROJECT_DIR$/my-club-subject/my-club-infra/my-club-infra.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-club-oss/my-club-oss.iml" filepath="$PROJECT_DIR$/my-club-oss/my-club-oss.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-club-subject/my-club-starter/my-club-starter.iml" filepath="$PROJECT_DIR$/my-club-subject/my-club-starter/my-club-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-club-subject/my-club-subject.iml" filepath="$PROJECT_DIR$/my-club-subject/my-club-subject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-club-subject/my-club-subject-api/my-club-subject-api.iml" filepath="$PROJECT_DIR$/my-club-subject/my-club-subject-api/my-club-subject-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-club-wx/my-club-wx.iml" filepath="$PROJECT_DIR$/my-club-wx/my-club-wx.iml" />
+    </modules>
+  </component>
+</project>
