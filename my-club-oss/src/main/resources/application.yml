@@ -1,5 +1,5 @@
 server:
-  port: 4010
+  port: 3011
 
 minio:
   url: http://101.43.140.223:9000

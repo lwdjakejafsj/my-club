@@ -23,7 +23,6 @@ public class StorageConfig {
     @Bean
     @RefreshScope
     public StorageAdapter storageService() {
-        System.out.println(storageType);
         if ("minio".equals(storageType)) {
             return new MinioStorageAdapter();
         } else if ("aliyun".equals(storageType)) {
